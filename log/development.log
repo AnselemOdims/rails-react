@@ -1,0 +1,7 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_test"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE "rails_react_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails_react_test"[0m
+  [1m[35m (248.0ms)[0m  [1m[35mCREATE DATABASE "rails_react_development" ENCODING = 'unicode'[0m
+  [1m[35m (80.2ms)[0m  [1m[35mCREATE DATABASE "rails_react_test" ENCODING = 'unicode'[0m
