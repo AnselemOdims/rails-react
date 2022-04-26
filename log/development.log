@@ -190,3 +190,57 @@ Processing by V1::GreetingsController#index as JSON
 Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 1299)
 
 
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-26 09:28:57 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 10.4ms | Allocations: 5906)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-26 09:29:04 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 946.1ms | Allocations: 100737)
+Completed 200 OK in 951ms (Views: 949.7ms | ActiveRecord: 0.0ms | Allocations: 101989)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-26 09:29:13 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2787)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 3147)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-26 09:29:38 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3436)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 4590)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-26 09:30:12 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 647)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3447)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 4619)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-26 09:30:57 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 637)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3448)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 4619)
+
+
