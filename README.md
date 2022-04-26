@@ -1,24 +1,79 @@
-# README
+# Hello-Rails-React
+>  
+## Built With
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby
+- Ruby on Rails
+- React
+- Redux
+- git
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+Clone the project by using terminal:
 
-* Configuration
+```
+git clone git@github.com:AnselemOdims/rails-react.git
 
-* Database creation
+```
+```
+cd rails-react
 
-* Database initialization
+```
+and then run the following command
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Development
 
-* Deployment instructions
+- Create database and run migrations using 
+```
+  bin/rails db:setup
+```
+- Start the server using 
+```
+  bin/rails s
+```
 
-* ...
+- To run test 
+  `rspec spec`
+
+### Prerequisites
+
+- Ruby
+- Rails
+- Node
+
+Rspec gem for testing enviroment
+
+## Author
+
+👤 **ANSELEM ODIMEGWU**
+
+- GitHub: [@AnselemOdims](https://github.com/AnselemOdims)
+- LinkedIn: [Anselem Odimegwu](https://www.linkedin.com/in/anselem-odimegwu/)
+- Email: anselemcloud@gmail.com
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/AnselemOdims/rails-react/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

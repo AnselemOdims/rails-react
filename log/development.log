@@ -3130,3 +3130,30 @@ Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 4.5ms | Allocations: 4492
 Completed 200 OK in 55ms (Views: 0.5ms | ActiveRecord: 28.3ms | Allocations: 5924)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-26 12:50:04 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 473)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 15507)
+Completed 200 OK in 23ms (Views: 21.6ms | Allocations: 16430)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-26 12:50:09 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-26 12:50:09 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Load (0.5ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 9.4ms | Allocations: 7699)
+
+
+  [1m[36mGreeting Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (0.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 3236)
+
+
